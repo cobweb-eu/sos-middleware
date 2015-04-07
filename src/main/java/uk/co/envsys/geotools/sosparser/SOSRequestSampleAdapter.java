@@ -26,6 +26,8 @@ import org.n52.oxf.sos.adapter.SOSAdapter;
  *
  *	This is an abstract class, to be extended by specific request types
  *	eg: GetCapabilities, GetObservation etc.
+ *
+ *	This is a first go at performing SOS requests, probably out of scope...
  */
 
 public abstract class SOSRequestSampleAdapter {

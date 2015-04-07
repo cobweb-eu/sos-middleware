@@ -1,0 +1,78 @@
+<om:ObservationCollection gml:id="oc_1427816660091" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd http://www.opengis.net/sampling/1.0 http://schemas.opengis.net/sampling/1.0.0/sampling.xsd" xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:sa="http://www.opengis.net/sampling/1.0">
+    <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+    <gml:lowerCorner>53.82793502621518 9.40234781963614</gml:lowerCorner>
+    <gml:upperCorner>53.82793502621518 9.40234781963614</gml:upperCorner>
+    </gml:Envelope>
+    </gml:boundedBy>
+    
+    <om:member>
+        <om:Observation>
+        
+            <om:samplingTime>
+            <gml:TimePeriod xsi:type="gml:TimePeriodType">
+            <gml:beginPosition>2015-03-31T15:00:00.000+02:00</gml:beginPosition>
+            <gml:endPosition>2015-03-31T16:00:00.000+02:00</gml:endPosition>
+            </gml:TimePeriod>
+            </om:samplingTime>
+            
+            <om:procedure xlink:href="Wassertemperatur-Stoer-Sperrwerk_Bp_5970040"/>
+            
+            <om:observedProperty>
+            <swe:CompositePhenomenon gml:id="cpid0" dimension="2">
+            <gml:name>Result Components</gml:name>
+            <swe:component xlink:href="http://www.opengis.net/def/property/OGC/0/SamplingTime"/>
+            <swe:component xlink:href="Wassertemperatur"/>
+            </swe:CompositePhenomenon>
+            </om:observedProperty>
+            
+            <om:featureOfInterest>
+            <gml:FeatureCollection>
+            <gml:featureMember>
+            <sa:SamplingPoint gml:id="Stoer-Sperrwerk_Bp_5970040" xsi:schemaLocation=" http://www.opengis.net/sampling/1.0 http://schemas.opengis.net/sampling/1.0.0/sampling.xsd">
+            <gml:description>NOT_SET</gml:description>
+            <gml:name>Stör-Sperrwerk Bp - Kilometer: 50</gml:name>
+            <sa:sampledFeature xlink:role="urn:x-ogc:def:property:river" xlink:href="http://sensorweb.demo.52north.org:80/PegelOnlineSOSv2.1/sos?REQUEST=getFeatureOfInterest&amp;service=SOS&amp;version=1.0.0&amp;featureOfInterestID=STOER"/>
+            <sa:position>
+            <gml:Point>
+            <gml:pos srsName="urn:ogc:def:crs:EPSG::4326">53.82793502621518 9.40234781963614</gml:pos>
+            </gml:Point>
+            </sa:position>
+            </sa:SamplingPoint>
+            </gml:featureMember>
+            </gml:FeatureCollection>
+            </om:featureOfInterest>
+            
+            <om:result>
+            <swe:DataArray>
+            <swe:elementCount>
+            <swe:Count>
+            <swe:value>61</swe:value>
+            </swe:Count>
+            </swe:elementCount>
+            <swe:elementType name="Components">
+            <swe:DataRecord>
+            <swe:field name="SamplingTime">
+            <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+            <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+            </swe:Time>
+            </swe:field>
+            <swe:field name="FeatureOfInterest">
+            <swe:Text definition="http://www.opengis.net/def/property/OGC/0/FeatureOfInterest"/>
+            </swe:field>
+            <swe:field name="Wassertemperatur">
+            <swe:Quantity definition="Wassertemperatur">
+            <swe:uom code="°C"/>
+            </swe:Quantity>
+            </swe:field>
+            </swe:DataRecord>
+            </swe:elementType>
+            <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+            </swe:encoding>
+            <swe:values>2015-03-31T15:00:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,8.0;2015-03-31T15:01:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,8.0;2015-03-31T15:02:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,8.0;2015-03-31T15:03:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,8.0;2015-03-31T15:04:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:05:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:06:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:07:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:08:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:09:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:10:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:11:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:12:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:13:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:14:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:15:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:16:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:17:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:18:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:19:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:20:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:21:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:22:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:23:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:24:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:25:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:26:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:27:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:28:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:29:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:30:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:31:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:32:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:33:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:34:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:35:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:36:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:37:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:38:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:39:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:40:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:41:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:42:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:43:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:44:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:45:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:46:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:47:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:48:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:49:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:50:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:51:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:52:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:53:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:54:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:55:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:56:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:57:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:58:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T15:59:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;2015-03-31T16:00:00.000+02:00,Stoer-Sperrwerk_Bp_5970040,7.9;</swe:values>
+            </swe:DataArray>
+            </om:result>
+        </om:Observation>
+    </om:member>
+    </om:ObservationCollection>

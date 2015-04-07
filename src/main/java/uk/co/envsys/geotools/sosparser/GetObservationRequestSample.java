@@ -31,6 +31,15 @@ import org.n52.oxf.valueDomains.time.TemporalValueDomain;
 import org.n52.oxf.valueDomains.time.TimePeriod;
 
 
+/**
+ * This builds a request for UCD SmartCoasts SOS service
+ * monitoring twitter feeds. It then executes the request and
+ * tries to get resultant XML. This is Beta and is not used
+ * to test the SOS XML Parseing.
+ * 
+ * @author sebastian.clarke@envsys.co.uk
+ *
+ */
 public class GetObservationRequestSample extends SOSRequestSampleAdapter {
 
 	public GetObservationRequestSample(String version) {
