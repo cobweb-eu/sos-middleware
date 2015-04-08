@@ -59,9 +59,21 @@ public abstract class SimpleSOSParser extends AbstractParser {
 		public static SimpleSOSParser getParser(String version) {
 			if(version == "1.0.0") {
 				return new SimpleSOSParser_100();
+			} else if(version == "2.0.0") {
+				return new SimpleSOSParser_200();
 			} else {
-				throw new IllegalArgumentException("Only version 1.0.0 implemented!");
+				throw new IllegalArgumentException("Only versions 1.0.0 and 2.0.0 are implemented!");
 			}
+		}
+		
+		public static SimpleSOSParser getParser(InputStream is) {
+			// try and parse input stream as XML
+			
+			// Check if it can be transformed into O&M 1 or O&M 2
+			
+			// return correct parser
+			// TODO: IMPLEMENT ME!
+			return null;
 		}
 	}
 	
