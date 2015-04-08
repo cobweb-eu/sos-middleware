@@ -1,0 +1,547 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:om="http://www.opengis.net/om/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sosGetObservation.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header/>
+  <soap:Body>
+    <sos:GetObservationResponse>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978750">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978750">
+              <gml:beginPosition>2013-01-10T14:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-10T15:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4300000071525574</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978751">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978751">
+              <gml:beginPosition>2013-01-10T15:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-10T16:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.36000001430511475</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978770">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978770">
+              <gml:beginPosition>2013-01-11T10:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T11:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.3400000035762787</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978771">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978771">
+              <gml:beginPosition>2013-01-11T11:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T12:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.44999998807907104</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978772">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978772">
+              <gml:beginPosition>2013-01-11T12:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T13:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.3799999952316284</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978773">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978773">
+              <gml:beginPosition>2013-01-11T13:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T14:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4099999964237213</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978776">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978776">
+              <gml:beginPosition>2013-01-11T16:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T17:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.49000000953674316</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978777">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978777">
+              <gml:beginPosition>2013-01-11T17:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T18:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_28BB82F5F334F1AE48532BF0DAC975138297D391">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.46000000834465027</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978778">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978778">
+              <gml:beginPosition>2013-01-11T18:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T19:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4000000059604645</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978779">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978779">
+              <gml:beginPosition>2013-01-11T19:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T20:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4000000059604645</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978780">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978780">
+              <gml:beginPosition>2013-01-11T20:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T21:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.5</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978781">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978781">
+              <gml:beginPosition>2013-01-11T21:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T22:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.3400000035762787</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978782">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978782">
+              <gml:beginPosition>2013-01-11T22:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-11T23:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.5099999904632568</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978783">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978783">
+              <gml:beginPosition>2013-01-11T23:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T00:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.41999998688697815</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978784">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978784">
+              <gml:beginPosition>2013-01-12T00:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T01:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.28999999165534973</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978785">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978785">
+              <gml:beginPosition>2013-01-12T01:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T02:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.41999998688697815</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978786">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978786">
+              <gml:beginPosition>2013-01-12T02:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T03:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.27000001072883606</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978787">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978787">
+              <gml:beginPosition>2013-01-12T03:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T04:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.25</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978788">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978788">
+              <gml:beginPosition>2013-01-12T04:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T05:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.25999999046325684</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978789">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978789">
+              <gml:beginPosition>2013-01-12T05:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T06:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.23000000417232513</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978790">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978790">
+              <gml:beginPosition>2013-01-12T06:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T07:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_3F7B38B87EAC8D12E5C24756ECAA3B60DD19DDCA">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.25</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978791">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978791">
+              <gml:beginPosition>2013-01-12T07:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T08:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_771AB1B3E0C57F2AF3098D731633EB9B0612E633">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.33000001311302185</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978792">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978792">
+              <gml:beginPosition>2013-01-12T08:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T09:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_771AB1B3E0C57F2AF3098D731633EB9B0612E633">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.2800000011920929</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978793">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978793">
+              <gml:beginPosition>2013-01-12T09:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T10:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_771AB1B3E0C57F2AF3098D731633EB9B0612E633">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4699999988079071</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978794">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978794">
+              <gml:beginPosition>2013-01-12T10:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T11:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_771AB1B3E0C57F2AF3098D731633EB9B0612E633">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.3700000047683716</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978795">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978795">
+              <gml:beginPosition>2013-01-12T11:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T12:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_771AB1B3E0C57F2AF3098D731633EB9B0612E633">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4699999988079071</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+      <sos:observationData>
+        <om:OM_Observation gml:id="o_978796">
+          <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+          <om:phenomenonTime>
+            <gml:TimePeriod gml:id="phenomenonTime_978796">
+              <gml:beginPosition>2013-01-12T12:00:00.000Z</gml:beginPosition>
+              <gml:endPosition>2013-01-12T13:00:00.000Z</gml:endPosition>
+            </gml:TimePeriod>
+          </om:phenomenonTime>
+          <om:resultTime>
+            <gml:TimeInstant gml:id="ti_771AB1B3E0C57F2AF3098D731633EB9B0612E633">
+              <gml:timePosition>2014-03-31T00:00:00.000Z</gml:timePosition>
+            </gml:TimeInstant>
+          </om:resultTime>
+          <om:procedure xlink:href="SPP-SE_NDIR_thermo42"/>
+          <om:observedProperty xlink:href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/10"/>
+          <om:featureOfInterest xlink:href="SPO_F-SE0003A_00010_100_100" xlink:title="Stockholm Hornsgatan"/>
+          <om:result xmlns:ns="http://www.opengis.net/gml/3.2" uom="mg.m-3" xsi:type="ns:MeasureType">0.4300000071525574</om:result>
+        </om:OM_Observation>
+      </sos:observationData>
+    </sos:GetObservationResponse>
+  </soap:Body>
+</soap:Envelope>
