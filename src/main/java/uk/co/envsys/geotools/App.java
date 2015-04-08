@@ -17,6 +17,7 @@ public class App
 	private static String UCD_XML_100 = "./src/test/test_get_observation_100_ucd_twitter.xml";
 	private static String DEMO_52N_XML_100 = "./src/test/test_get_obsevation_100_demo_52n.xml";
 	private static String UCD_XML_200 = "./src/test/test_get_observation_200_ucd_twitter.xml";
+	private static String DEMO_52N_XML_200 = "./src/test/test_get_observation_200_demo_52n.xml";
 	
     public static void main( String[] args )
     {
@@ -64,6 +65,19 @@ public class App
 			System.out.println(f.features().next());
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not find test xml file: " + UCD_XML_200);
+			System.out.println("PWD: " + System.getProperty("user.dir"));
+			System.exit(-1);
+		}
+		
+		try {
+			inXml = new FileInputStream(DEMO_52N_XML_200);
+			System.out.println("Parseing - " + DEMO_52N_XML_200);
+			GTVectorDataBinding b = (GTVectorDataBinding) p.parse(inXml, "", "");
+			FeatureCollection<?, ?> f = b.getPayload();
+			System.out.println(f.features().next());
+			
+		} catch (FileNotFoundException e) {
+			System.out.println("Could not find test xml file: " + DEMO_52N_XML_200);
 			System.out.println("PWD: " + System.getProperty("user.dir"));
 			System.exit(-1);
 		}
