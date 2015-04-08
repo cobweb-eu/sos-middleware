@@ -25,17 +25,19 @@
 	<classpathentry kind="src" path="/oxf-sos-adapter"/>
 	<classpathentry kind="src" path="/oxf-common"/>
 	<classpathentry kind="src" path="/oxf-adapter-api"/>
-	<classpathentry kind="lib" path="/home/envsys/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar">
+	<classpathentry combineaccessrules="false" kind="src" path="/52n-oxf-xmlbeans"/>
+	<classpathentry kind="src" path="/52n-wps-io"/>
+	<classpathentry kind="src" path="/52n-wps-io-geotools"/>
+	<classpathentry kind="lib" path="/home/envsys/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar" sourcepath="/home/envsys/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.apache.xmlbeans"/>
-			<attribute name="maven.artifactId" value="xmlbeans"/>
-			<attribute name="maven.version" value="2.6.0"/>
+			<attribute name="javadoc_location" value="jar:file:/home/envsys/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="org.slf4j"/>
+			<attribute name="maven.artifactId" value="slf4j-api"/>
+			<attribute name="maven.version" value="1.7.5"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/52n-oxf-xmlbeans"/>
-	<classpathentry kind="src" path="/52n-wps-io"/>
 	<classpathentry kind="lib" path="/home/envsys/.m2/repository/org/n52/wps/52n-wps-config/1.2.1/52n-wps-config-1.2.1.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
