@@ -15,9 +15,14 @@ package uk.co.envsys.geotools.sosparser;
 import java.io.IOException;
 import java.io.InputStream;
 
+import net.opengis.om.x10.ObservationCollectionDocument;
+import net.opengis.sos.x20.GetObservationResponseDocument;
+import net.opengis.sos.x20.GetObservationResponseType;
+
 import org.apache.xmlbeans.XmlException;
 import org.apache.xmlbeans.XmlObject;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
+import org.n52.oxf.xmlbeans.tools.SoapUtil;
 import org.n52.wps.io.data.IData;
 import org.n52.wps.io.data.binding.complex.GTVectorDataBinding;
 import org.n52.wps.io.datahandler.parser.AbstractParser;
@@ -68,12 +73,29 @@ public abstract class SimpleSOSParser extends AbstractParser {
 		
 		public static SimpleSOSParser getParser(InputStream is) {
 			// try and parse input stream as XML
+			XmlObject doc;
+			try {
+				doc = XmlObject.Factory.parse(is);
+			} catch (XmlException e) {
+				throw new IllegalArgumentException("Error parseing XML", e);
+			} catch (IOException e) {
+				throw new IllegalArgumentException("Error transferring XML", e);
+			}
 			
 			// Check if it can be transformed into O&M 1 or O&M 2
+			if(!doc.schemaType().isAssignableFrom(ObservationCollectionDocument.type)) {
+				// O&M 1
+				return new SimpleSOSParser_100();
+			}
 			
-			// return correct parser
-			// TODO: IMPLEMENT ME!
-			return null;
+			if(SoapUtil.isSoapEnvelope(doc) &&
+					GetObservationResponseType.type.equals(SoapUtil.getSchemaTypeOfXmlPayload(doc))) {
+				return new SimpleSOSParser_200();
+			} else if(doc.schemaType().isAssignableFrom(GetObservationResponseDocument.type)) {
+				return new SimpleSOSParser_200();
+			} else {
+				throw new IllegalArgumentException("Suitable parser not found");
+			}
 		}
 	}
 	
