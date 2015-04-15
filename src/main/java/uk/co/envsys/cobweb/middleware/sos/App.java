@@ -1,4 +1,4 @@
-package uk.co.envsys.geotools;
+package uk.co.envsys.cobweb.middleware.sos;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import org.geotools.feature.FeatureCollection;
 import org.n52.wps.io.data.binding.complex.GTVectorDataBinding;
 
-import uk.co.envsys.geotools.sosparser.SimpleSOSParser;
+import uk.co.envsys.cobweb.middleware.sos.sosparser.SimpleSOSParser;
 
 /**
  * Simple bootstrapping to test with some sample, file based, XML

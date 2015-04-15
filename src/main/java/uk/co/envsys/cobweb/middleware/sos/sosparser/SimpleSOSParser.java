@@ -10,7 +10,7 @@
  * instantiating of objects round data values
  * 
  */
-package uk.co.envsys.geotools.sosparser;
+package uk.co.envsys.cobweb.middleware.sos.sosparser;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,7 +52,10 @@ public abstract class SimpleSOSParser extends AbstractParser {
 	protected SimpleFeatureBuilder featureBuilder;
 	protected static Logger LOGGER = LoggerFactory.getLogger(SimpleSOSParser.class);
 	
-	protected SimpleSOSParser(){ super(); } // protected constructor, will use factory
+	protected SimpleSOSParser() { // protected constructor, will use factory  
+		super(); 
+		supportedIDataTypes.add(GTVectorDataBinding.class); 
+	} 
 	
 	// must be implemented by subclasses
 	protected abstract GTVectorDataBinding parseXML(XmlObject document);

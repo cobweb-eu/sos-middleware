@@ -1,7 +1,7 @@
 /**
  * 
  */
-package uk.co.envsys.geotools.sosparser;
+package uk.co.envsys.cobweb.middleware.sos.sosparser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ import org.opengis.feature.simple.SimpleFeatureType;
 
 /**
  * Class to provide concrete implementation of a Simple SOS Parser for
- * Observations returned in O&M v2.0 from SOS 2.0.0
+ * Observations returned in O&amp;M v2.0 from SOS 2.0.0
  * @author envsys
  *
  */

@@ -1,4 +1,4 @@
-package uk.co.envsys.geotools.sosparser;
+package uk.co.envsys.cobweb.middleware.sos.sosparser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -140,7 +140,7 @@ public class SimpleSOSParser_100 extends SimpleSOSParser {
 	 * This function uses the featureBuilder class member to construct the feature according
 	 * to the previously generated SimpleFeatureType
 	 * 
-	 * @param observation {@code ObservationType} The observation as represented by O&M v1.0
+	 * @param observation {@code ObservationType} The observation as represented by O&amp;M v1.0
 	 * @return {@code SimpleFeature} a feature representing this observation
 	 * @throws XmlException if any required elements were not found during parsing
 	 */
