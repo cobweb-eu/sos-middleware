@@ -32,12 +32,22 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * @author Sebastian Clarke - Environment Systems
+ * Class to provide the facility to parse SOS responses 
+ * to GeoTools FeatureCollection objects. It does not provide
+ * the implementation directly, but is an abstract base class
+ * defining the behaviour. 
+ * 
+ * It also provides an inner static factory class to return
+ * concrete implementations of the base class according to the
+ * SOS version etc.
+ * 
+ * @author Sebastian Clarke - sebastian.clarke@envsys.co.uk
  * Copyright (c) 2015 - Environment Systems
  *
  */
 public abstract class SimpleSOSParser extends AbstractParser {
 	
+	// private members, inherited by implementing subclasses
 	protected SimpleFeatureType type;
 	protected SimpleFeatureBuilder featureBuilder;
 	protected static Logger LOGGER = LoggerFactory.getLogger(SimpleSOSParser.class);
@@ -47,7 +57,7 @@ public abstract class SimpleSOSParser extends AbstractParser {
 	// must be implemented by subclasses
 	protected abstract GTVectorDataBinding parseXML(XmlObject document);
 
-	// implement the IParser interface
+	// implement the IParser interface, for integration with WPS stack
 	public IData parse(InputStream input, String mimeType, String schema) {
 		XmlObject doc;
 		try {
@@ -60,7 +70,25 @@ public abstract class SimpleSOSParser extends AbstractParser {
 		return parseXML(doc);
 	}
 	
+	/**
+	 * Static factory class to return concrete implementations of the SOS parser
+	 * based on the desired version or input stream properties
+	 * 
+	 * @author Sebastian Clarke - sebastian.clarke@envsys.co.uk
+	 * Copyright (c) 2015 - Environment Systems
+	 *
+	 */
 	public static class Factory {
+		/**
+		 * Returns a concrete parser implementation based on the
+		 * SOS version number supplied as a string
+		 * 
+		 * @param version - A String containing the version number
+		 * "1.0.0" and "2.0.0" are currently allowed
+		 * @return an instantiated SimpleSOSParser for the requested
+		 * version of SOS
+		 * 
+		 */
 		public static SimpleSOSParser getParser(String version) {
 			if(version == "1.0.0") {
 				return new SimpleSOSParser_100();
@@ -71,6 +99,14 @@ public abstract class SimpleSOSParser extends AbstractParser {
 			}
 		}
 		
+		/**
+		 * Returns a concrete parser implementation based on the
+		 * InputStream provided. The input stream is analysed and
+		 * the most specific parser available is returned.
+		 * 
+		 * @param is The InputStream to return a parser for
+		 * @return An instantiated SimpleSOSParser for the input stream
+		 */
 		public static SimpleSOSParser getParser(InputStream is) {
 			// try and parse input stream as XML
 			XmlObject doc;
@@ -96,6 +132,8 @@ public abstract class SimpleSOSParser extends AbstractParser {
 			} else {
 				throw new IllegalArgumentException("Suitable parser not found");
 			}
+			
+			// TODO: Return the SocialSOSParser sometimes
 		}
 	}
 	
