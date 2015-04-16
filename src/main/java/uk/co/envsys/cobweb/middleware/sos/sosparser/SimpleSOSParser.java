@@ -51,11 +51,16 @@ public abstract class SimpleSOSParser extends AbstractParser {
 	protected SimpleFeatureType type;
 	protected SimpleFeatureBuilder featureBuilder;
 	protected static Logger LOGGER = LoggerFactory.getLogger(SimpleSOSParser.class);
+	protected boolean strictMode = true;
 	
 	protected SimpleSOSParser() { // protected constructor, will use factory  
 		super(); 
 		supportedIDataTypes.add(GTVectorDataBinding.class); 
 	} 
+	
+	protected void SetStrictMode(boolean strict) {
+		strictMode = strict;
+	}
 	
 	// must be implemented by subclasses
 	protected abstract GTVectorDataBinding parseXML(XmlObject document);

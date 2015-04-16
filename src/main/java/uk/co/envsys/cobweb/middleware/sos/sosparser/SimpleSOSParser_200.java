@@ -9,6 +9,7 @@ import java.util.List;
 import net.opengis.gml.x32.FeaturePropertyType;
 import net.opengis.gml.x32.ReferenceType;
 import net.opengis.gml.x32.TimeInstantPropertyType;
+
 import net.opengis.gml.x32.TimePeriodPropertyType;
 import net.opengis.om.x20.OMObservationType;
 import net.opengis.om.x20.OMProcessPropertyType;
@@ -16,6 +17,7 @@ import net.opengis.om.x20.ObservationContextPropertyType;
 import net.opengis.om.x20.TimeObjectPropertyType;
 import net.opengis.sos.x20.GetObservationResponseDocument;
 import net.opengis.sos.x20.GetObservationResponseType;
+
 import org.apache.xmlbeans.XmlException;
 import org.apache.xmlbeans.XmlObject;
 import org.geotools.data.collection.ListFeatureCollection;
@@ -32,7 +34,8 @@ import org.opengis.feature.simple.SimpleFeatureType;
 /**
  * Class to provide concrete implementation of a Simple SOS Parser for
  * Observations returned in O&amp;M v2.0 from SOS 2.0.0
- * @author envsys
+ * @author Sebastian Clarke - sebastian.clarke@envsys.co.uk
+ * Copyright (c) 2015 - Environment Systems
  *
  */
 public class SimpleSOSParser_200 extends SimpleSOSParser {
@@ -42,43 +45,13 @@ public class SimpleSOSParser_200 extends SimpleSOSParser {
 	 */
 	@Override
 	protected GTVectorDataBinding parseXML(XmlObject document) {
-		if(SoapUtil.isSoapEnvelope(document)) {
-			LOGGER.debug("Found SOAP Envelope");
-			if(GetObservationResponseType.type.equals(SoapUtil.getSchemaTypeOfXmlPayload(document))) {		
-				XmlObject payload = SoapUtil.stripSoapEnvelope(document);		
-				if(!payload.schemaType().isAssignableFrom(GetObservationResponseType.type)) {
-					IllegalArgumentException ex = new IllegalArgumentException("Could not parse GetObservationResponse from SOAP Body"); 
-					LOGGER.error(ex.getMessage());
-					throw ex;
-				} else {
-					// DO THE THINGS
-					LOGGER.debug("Found GetObservationResponse in SOAP Body!");
-					try {
-						return parseObservations(payload);
-					} catch (XmlException e) {
-						IllegalArgumentException ex = new IllegalArgumentException("Error parseing SOS XML:", e); 
-						LOGGER.error(ex.getMessage());
-						throw ex;
-					}
-				}
-			} else{
-				IllegalArgumentException ex = new IllegalArgumentException("SOAP Body does not contain valid GetObservationResponse"); 
-				LOGGER.error(ex.getMessage());
-				throw ex;
-			}
-		} else if(document.schemaType().isAssignableFrom(GetObservationResponseDocument.type)) {
-			LOGGER.warn("GetObservations not in SOAP Envelope");
-			try {
-				return parseObservations(document);
-			} catch (XmlException e) {
-				IllegalArgumentException ex = new IllegalArgumentException("Error parseing SOS XML:", e); 
-				LOGGER.error(ex.getMessage());
-				throw ex;
-			}
-		} else {
-			IllegalArgumentException e = new IllegalArgumentException("Could not find SOAP Envelope or GetObservationResponse in response"); 
-			LOGGER.error(e.getMessage());
-			throw e;
+		XmlObject observations = getPayload(document);
+		try {
+			return parseObservations(observations);
+		} catch(XmlException e) {
+			IllegalArgumentException ex = new IllegalArgumentException("Problem parseing xml", e);
+			LOGGER.error(ex.getMessage());
+			throw ex;
 		}
 	}
 	
@@ -86,7 +59,6 @@ public class SimpleSOSParser_200 extends SimpleSOSParser {
 		GetObservationResponseType obs = (GetObservationResponseType)
 				observations.changeType(GetObservationResponseType.type);	
 		
-	
 		int numMembers = obs.sizeOfObservationDataArray();
 		LOGGER.debug("Parseing " + numMembers + "observations");
 		
@@ -172,5 +144,33 @@ public class SimpleSOSParser_200 extends SimpleSOSParser {
 		}
 		
 		return featureBuilder.buildFeature(null);
+	}
+	
+	protected XmlObject getPayload(XmlObject document) {
+		if(SoapUtil.isSoapEnvelope(document)) {
+			LOGGER.debug("Found SOAP Envelope");
+			if(GetObservationResponseType.type.equals(SoapUtil.getSchemaTypeOfXmlPayload(document))) {		
+				XmlObject payload = SoapUtil.stripSoapEnvelope(document);		
+				if(!payload.schemaType().isAssignableFrom(GetObservationResponseType.type)) {
+					IllegalArgumentException ex = new IllegalArgumentException("Could not parse GetObservationResponse from SOAP Body"); 
+					LOGGER.error(ex.getMessage());
+					throw ex;
+				} else {
+					LOGGER.debug("Found GetObservationResponse in SOAP Body!");
+					return payload;
+				}
+			} else{
+				IllegalArgumentException ex = new IllegalArgumentException("SOAP Body does not contain valid GetObservationResponse"); 
+				LOGGER.error(ex.getMessage());
+				throw ex;
+			}
+		} else if(document.schemaType().isAssignableFrom(GetObservationResponseDocument.type)) {
+			LOGGER.warn("GetObservations not in SOAP Envelope");
+			return document;
+		} else {
+			IllegalArgumentException e = new IllegalArgumentException("Could not find SOAP Envelope or GetObservationResponse in response"); 
+			LOGGER.error(e.getMessage());
+			throw e;
+		}
 	}
 }

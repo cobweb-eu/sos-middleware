@@ -7,6 +7,7 @@ import org.geotools.feature.FeatureCollection;
 import org.n52.wps.io.data.binding.complex.GTVectorDataBinding;
 
 import uk.co.envsys.cobweb.middleware.sos.sosparser.SimpleSOSParser;
+import uk.co.envsys.cobweb.middleware.sos.sosparser.SocialSOSParser;
 
 /**
  * Simple bootstrapping to test with some sample, file based, XML
@@ -35,7 +36,7 @@ public class App
 			System.out.println("Parseing - " + UCD_XML_100);
 			GTVectorDataBinding b = (GTVectorDataBinding) p.parse(inXml, "", "");
 			FeatureCollection<?, ?> f = b.getPayload();
-			System.out.println(f.features().next());
+			//System.out.println(f.features().next());
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not find test xml file: " + UCD_XML_100);
 			System.out.println("PWD: " + System.getProperty("user.dir"));
@@ -48,7 +49,7 @@ public class App
 			System.out.println("Parseing - " + DEMO_52N_XML_100);
 			GTVectorDataBinding b = (GTVectorDataBinding) p.parse(inXml, "", "");
 			FeatureCollection<?, ?> f = b.getPayload();
-			System.out.println(f);
+			//System.out.println(f);
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not find test xml file: " + DEMO_52N_XML_100);
 			System.out.println("PWD: " + System.getProperty("user.dir"));
@@ -62,7 +63,7 @@ public class App
 			System.out.println("Parseing - " + UCD_XML_200);
 			GTVectorDataBinding b = (GTVectorDataBinding) p.parse(inXml, "", "");
 			FeatureCollection<?, ?> f = b.getPayload();
-			System.out.println(f.features().next());
+			//System.out.println(f.features().next());
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not find test xml file: " + UCD_XML_200);
 			System.out.println("PWD: " + System.getProperty("user.dir"));
@@ -74,12 +75,25 @@ public class App
 			System.out.println("Parseing - " + DEMO_52N_XML_200);
 			GTVectorDataBinding b = (GTVectorDataBinding) p.parse(inXml, "", "");
 			FeatureCollection<?, ?> f = b.getPayload();
-			System.out.println(f.features().next());
+			//System.out.println(f.features().next());
 			
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not find test xml file: " + DEMO_52N_XML_200);
 			System.out.println("PWD: " + System.getProperty("user.dir"));
 			System.exit(-1);
+		}
+		
+		System.out.println("------------------");
+		try {
+			inXml = new FileInputStream(UCD_XML_200);
+			p = new SocialSOSParser();
+			GTVectorDataBinding b = (GTVectorDataBinding) p.parse(inXml, "", "");
+			FeatureCollection<?, ?> f = b.getPayload();
+			System.out.println(f.features().next());
+		} catch(FileNotFoundException e) {
+			System.out.println("Could not find test xml file: " + UCD_XML_200);
+			System.out.println("PWD: " + System.getProperty("user.dir"));
+			System.exit(-1);	
 		}
     }
 }
