@@ -116,7 +116,7 @@ public class SimpleSOSParser_100 extends SimpleSOSParser {
 			builder.add("boundedBy", BoundingShapeType.class);
 		}
 		if(observation.isSetLocation()) {
-			builder.add("Location", LocationPropertyType.class);
+			builder.add("location", LocationPropertyType.class);
 		}
 		if(observation.isSetDescription()) {
 			builder.add("description", StringOrRefType.class);
