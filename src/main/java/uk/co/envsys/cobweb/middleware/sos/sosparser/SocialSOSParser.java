@@ -90,10 +90,12 @@ public class SocialSOSParser extends SimpleSOSParser_200 {
 
 
 	@SuppressWarnings("restriction")
-	private SimpleFeature convertToFeature(OMObservationType observation) throws XmlException {
+	private SimpleFeature convertToFeature(OMObservationType observation) 
+														throws XmlException {
 		try {
 			try {
-				AbstractTimeObjectType timeObject = observation.getPhenomenonTime().getAbstractTimeObject();
+				AbstractTimeObjectType timeObject = 
+						observation.getPhenomenonTime().getAbstractTimeObject();
 				if(TimeInstantType.type.isAssignableFrom(timeObject.schemaType())) {
 					TimeInstantType timeInstant = (TimeInstantType) timeObject.changeType(TimeInstantType.type);
 					Date phenomenonTime = javax.xml.bind.DatatypeConverter.parseDateTime(timeInstant.getTimePosition().getStringValue()).getTime();

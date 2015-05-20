@@ -53,6 +53,11 @@ public abstract class SimpleSOSParser extends AbstractParser {
 	protected static Logger LOGGER = LoggerFactory.getLogger(SimpleSOSParser.class);
 	protected boolean strictMode = true;
 	
+	protected static final String SOS_V1 = "1.0.0";
+	protected static final String SOS_V2 = "2.0.0";
+	protected static final String SOCIAL_SENSOR = "UCD_SOCIAL";
+	
+	
 	protected SimpleSOSParser() { // protected constructor, will use factory  
 		super(); 
 		supportedIDataTypes.add(GTVectorDataBinding.class); 
@@ -98,12 +103,14 @@ public abstract class SimpleSOSParser extends AbstractParser {
 		 * 
 		 */
 		public static SimpleSOSParser getParser(String version) {
-			if(version == "1.0.0") {
+			if(version == SOS_V1) {
 				return new SimpleSOSParser_100();
-			} else if(version == "2.0.0") {
+			} else if(version == SOS_V2) {
 				return new SimpleSOSParser_200();
+			} else if (version == SOCIAL_SENSOR) {
+				return new SocialSOSParser();
 			} else {
-				throw new IllegalArgumentException("Only versions 1.0.0 and 2.0.0 are implemented!");
+				throw new IllegalArgumentException("Only " + SOS_V1 + ", " + SOS_V2 + " and " + SOCIAL_SENSOR + " supported.");
 			}
 		}
 		
