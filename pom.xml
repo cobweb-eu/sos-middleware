@@ -3,10 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>uk.co.envsys</groupId>
-  <artifactId>geotools</artifactId>
+  <artifactId>sos-middleware</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>geotools</name>
+  <name>sos-middleware</name>
   <url>http://maven.apache.org</url>
 
   <properties>
